@@ -1,4 +1,4 @@
-package parkzoo.model;
+package model;
 
 public class AquaticNonCarnivorous extends Aquatic {
     public AquaticNonCarnivorous(String species, int age, boolean canSwim) {

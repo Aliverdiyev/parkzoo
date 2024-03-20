@@ -1,6 +1,12 @@
 package model;
 
 public class TerrestrialNonCarnivorous extends Terrestrial {
+    //    Default Constructor
+    public TerrestrialNonCarnivorous() {
+
+    }
+
+    // Constructor
     public TerrestrialNonCarnivorous(String species, int age, int numberOfLegs) {
         super(species, age, numberOfLegs);
     }

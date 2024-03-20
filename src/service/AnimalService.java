@@ -1,6 +1,6 @@
 package service;
 
-import db.Databas;
+import db.Database;
 import model.AquaticCarnivorous;
 import model.AquaticNonCarnivorous;
 import model.TerrestrialCarnivorous;
@@ -9,13 +9,12 @@ import util.MenuUtill;
 
 import java.util.Scanner;
 
-import static db.Databas.*;
+import static db.Database.*;
 
 public class AnimalService {
     MenuUtill menuUtill = new MenuUtill();
 
     public void addAquaticCarnivorous() {
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the type: ");
         String spec = scanner.nextLine();
@@ -43,7 +42,7 @@ public class AnimalService {
         int age = scanner.nextInt();
         System.out.println("Uze bilirmi? true ve ya false daxil edin: ");
         boolean canSwim = scanner.nextBoolean();
-        Databas.aquaticNonCarnivorous.add(new AquaticNonCarnivorous(spec, age, canSwim));
+        Database.aquaticNonCarnivorous.add(new AquaticNonCarnivorous(spec, age, canSwim));
         System.out.println("Yirtici olmayan baliq DB-ya ugurla elave olundu");
         System.out.println();
     }
@@ -64,7 +63,7 @@ public class AnimalService {
         int age = scanner.nextInt();
         System.out.println("Nece ayaqli heyvan oldugunu daxil edin: : ");
         int numberOfLegs = scanner.nextInt();
-        Databas.terrestrialCarnivorous.add(new TerrestrialCarnivorous(spec, age, numberOfLegs));
+        Database.terrestrialCarnivorous.add(new TerrestrialCarnivorous(spec, age, numberOfLegs));
         System.out.println("Yirtici heyvan DB-ya ugurla elave olundu");
         System.out.println();
     }
@@ -87,7 +86,7 @@ public class AnimalService {
         int age = scanner.nextInt();
         System.out.println("Nece ayaqli heyvan oldugunu daxil edin: : ");
         int numberOfLegs = scanner.nextInt();
-        Databas.terrestrialNonCarnivorous.add(new TerrestrialNonCarnivorous(spec, age, numberOfLegs));
+        Database.terrestrialNonCarnivorous.add(new TerrestrialNonCarnivorous(spec, age, numberOfLegs));
         System.out.println("Yirtici olmayan heyvan DB-ya ugurla elave olundu");
         System.out.println();
     }

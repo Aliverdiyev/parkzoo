@@ -7,7 +7,7 @@ import model.TerrestrialNonCarnivorous;
 
 import java.util.ArrayList;
 
-public class Databas {
+public class Database {
     public static ArrayList<AquaticCarnivorous> aquaticCarnivorous = new ArrayList<>();
     public static ArrayList<AquaticNonCarnivorous> aquaticNonCarnivorous = new ArrayList<>();
     public static ArrayList<TerrestrialCarnivorous> terrestrialCarnivorous = new ArrayList<>();

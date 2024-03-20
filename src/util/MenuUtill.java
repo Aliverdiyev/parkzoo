@@ -8,7 +8,7 @@ public class MenuUtill {
     public static void mein() {
         while (true) {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Hello, welcome to PARKZOO!");
+            System.out.println("Hello, welcome to PARK-ZOO!");
             System.out.println("Select the category you are interested in! \n" +
                     "1 -> Aquatic \n" +
                     "2 -> Terrestrial \n" +

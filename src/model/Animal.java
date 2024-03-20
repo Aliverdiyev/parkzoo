@@ -4,12 +4,14 @@ public class Animal {
     private String species;
     private int age;
 
+    //    Default Constructor
+    public Animal() {
+    }
+
+    //    Constructor
     public Animal(String species, int age) {
         this.species = species;
         this.age = age;
-    }
-
-    public Animal() {
     }
 
     public void eat() {
@@ -19,8 +21,8 @@ public class Animal {
     public void sleep() {
         System.out.println("The " + species + " is sleeping.");
     }
+//   Getter-setter
 
-    //    ---Getter---
     public String getSpecies() {
         return species;
     }
@@ -29,7 +31,6 @@ public class Animal {
         return age;
     }
 
-    //   ---Setter---
     public void setSpecies(String species) {
         this.species = species;
     }

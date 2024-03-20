@@ -1,8 +1,8 @@
 package model;
-
 import model.Aquatic;
 
 public class AquaticCarnivorous extends Aquatic {
+//    Constructor
     public AquaticCarnivorous(String species, int age, boolean canSwim) {
         super(species, age, canSwim);
     }

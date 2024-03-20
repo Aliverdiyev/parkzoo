@@ -1,15 +1,16 @@
 package model;
 
 public class Aquatic extends Animal {
-    public boolean isCanSwim() {
-        return canSwim;
-    }
-
     private boolean canSwim;
 
+    //  Constructor
     public Aquatic(String species, int age, boolean canSwim) {
         super(species, age);
         this.canSwim = canSwim;
+    }
+
+    public boolean isCanSwim() {
+        return canSwim;
     }
 
     public void swim() {

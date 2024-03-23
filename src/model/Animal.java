@@ -21,8 +21,8 @@ public class Animal {
     public void sleep() {
         System.out.println("The " + species + " is sleeping.");
     }
-//   Getter-setter
 
+    //   Getter-setter
     public String getSpecies() {
         return species;
     }

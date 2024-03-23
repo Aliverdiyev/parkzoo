@@ -36,14 +36,14 @@ public class AnimalService {
 
     public void addAquaticNonCarnivorous() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Novu daxil edin: ");
+        System.out.println("Enter the type:  ");
         String spec = scanner.nextLine();
-        System.out.println("Yasi daxil edin: ");
+        System.out.println("Enter the age: ");
         int age = scanner.nextInt();
-        System.out.println("Uze bilirmi? true ve ya false daxil edin: ");
+        System.out.println("Can it swim? (Enter: true or false): ");
         boolean canSwim = scanner.nextBoolean();
         Database.aquaticNonCarnivorous.add(new AquaticNonCarnivorous(spec, age, canSwim));
-        System.out.println("Yirtici olmayan baliq DB-ya ugurla elave olundu");
+        System.out.println("non-carnivorous fish added to the database");
         System.out.println();
     }
 

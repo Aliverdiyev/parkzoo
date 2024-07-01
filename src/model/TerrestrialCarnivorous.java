@@ -2,13 +2,13 @@ package model;
 
 public class TerrestrialCarnivorous extends Terrestrial {
 
-// Default Constructor
     public TerrestrialCarnivorous() {
     }
-//    Constructor
+
     public TerrestrialCarnivorous(String species, int age, int numberOfLegs) {
         super(species, age, numberOfLegs);
     }
+
     public void hunt() {
         System.out.println("The carnivorous terrestrial " + getSpecies() + " is hunting.");
     }

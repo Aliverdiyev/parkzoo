@@ -1,7 +1,7 @@
-import util.MenuUtill;
+import util.MenuUtil;
 
 public class Main {
     public static void main(String[] args) {
-        MenuUtill.mein();
+        MenuUtil.menu();
     }
 }

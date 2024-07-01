@@ -1,7 +1,6 @@
 package model;
 
 public class AquaticNonCarnivorous extends Aquatic {
-//    Constructor
     public AquaticNonCarnivorous(String species, int age, boolean canSwim) {
         super(species, age, canSwim);
     }

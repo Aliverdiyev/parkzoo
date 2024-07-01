@@ -1,9 +1,8 @@
 package model;
 
 public class Aquatic extends Animal {
-    private boolean canSwim;
+    private final boolean canSwim;
 
-    //  Constructor
     public Aquatic(String species, int age, boolean canSwim) {
         super(species, age);
         this.canSwim = canSwim;
